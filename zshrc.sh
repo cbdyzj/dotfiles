@@ -13,16 +13,12 @@ autoload -U compinit && compinit
 # env
 [ -f "$(dirname "$0")/.env" ] && source "$(dirname "$0")/.env"
 
-# bin
-if [ -d "$HOME/bin" ]; then
-    export PATH="$HOME/bin:$PATH"
-fi
-
+# XDG
 export PATH="$HOME/.local/bin:$PATH"
 
 # node
-export N_PREFIX="$HOME/n"
-export PATH="$HOME/n/bin:$PATH"
+export N_PREFIX="$HOME/.n"
+export PATH="$N_PREFIX/bin:$PATH"
 
 # bun
 export PATH="$HOME/.bun/bin:$PATH"
