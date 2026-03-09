@@ -1,0 +1,13 @@
+
+[mcpServers.context7]
+command = "bunx"
+args = ["@upstash/context7-mcp"]
+
+[mcpServers.pubmed-mcp]
+command = "bunx"
+args = ["@cyanheads/pubmed-mcp-server"]
+disabled = false
+autoApprove = []
+env.NCBI_API_KEY = "${NCBI_API_KEY}"
+
+# yj -tj < mcp.toml | jq > mcp.json
