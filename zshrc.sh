@@ -39,5 +39,8 @@ export PATH="$HOME/Developer/graalvm-jdk-25+37.1/Contents/Home/bin:$PATH"
 # zig
 alias zig="$HOME/Developer/zig-aarch64-macos-0.15.2/zig"
 
+# go
+export PATH="$HOME/go/bin:$PATH"
+
 # zoxide
 eval "$(zoxide init zsh)"
