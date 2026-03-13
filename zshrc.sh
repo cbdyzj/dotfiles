@@ -13,6 +13,9 @@ autoload -U compinit && compinit
 # env
 [ -f "$(dirname "$0")/.env" ] && source "$(dirname "$0")/.env"
 
+# python
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+
 # XDG
 export PATH="$HOME/.local/bin:$PATH"
 
@@ -25,9 +28,6 @@ export PATH="$HOME/.bun/bin:$PATH"
 
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# python
-export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
 # gradle
 alias gradle="$HOME/Developer/gradle-9.3.1/bin/gradle"
