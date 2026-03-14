@@ -12,6 +12,6 @@ alias ls-pnpm='pnpm -g ls --depth 0'
 alias code='open -b com.microsoft.VSCode'
 
 alias pm2r="pm2 resurrect"
-alias oc-ship="opencode run --command ship"
+alias ai-ship="opencode run --command ship"
 
 alias use-python='export PATH="$HOME/Library/Python/3.9/bin:$PATH"'
