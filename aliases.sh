@@ -16,4 +16,4 @@ alias pm2r="pm2 resurrect"
 alias use-python='export PATH="$HOME/Library/Python/3.9/bin:$PATH"'
 
 alias ai-ship="opencode run --command ship"
-alias claude-yolo="claude --permission-mode bypassPermissions"
+alias claude-yolo='claude --dangerously-skip-permissions'
