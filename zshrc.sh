@@ -1,7 +1,10 @@
+# env
+[ -f "$(dirname "$0")/.env" ] && source "$(dirname "$0")/.env"
+
 # shell prompt
 ZSH_PROMPT_NEWLINE=$'\n'
-
-PS1="🍭:%~${ZSH_PROMPT_NEWLINE}$ "
+DEFAULT_SHELL_PROMPT="%n@$(scutil --get ComputerName)"
+PS1="${SHELL_PROMPT:-DEFAULT_SHELL_PROMPT}:%~$ZSH_PROMPT_NEWLINE$ "
 
 # completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -11,8 +14,7 @@ autoload -U compinit && compinit
 . "$(dirname "$0")/aliases.sh"
 . "$(dirname "$0")/ss.sh"
 
-# env
-[ -f "$(dirname "$0")/.env" ] && source "$(dirname "$0")/.env"
+
 
 # XDG
 export PATH="$HOME/.local/bin:$PATH"
