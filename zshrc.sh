@@ -14,8 +14,6 @@ autoload -U compinit && compinit
 . "$(dirname "$0")/aliases.sh"
 . "$(dirname "$0")/ss.sh"
 
-
-
 # XDG
 export PATH="$HOME/.local/bin:$PATH"
 
