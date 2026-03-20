@@ -1,6 +1,7 @@
 # shell prompt
 ZSH_PROMPT_NEWLINE=$'\n'
-PS1="%n@$(scutil --get ComputerName):%~${ZSH_PROMPT_NEWLINE}$ "
+
+PS1="🍭:%~${ZSH_PROMPT_NEWLINE}$ "
 
 # completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
