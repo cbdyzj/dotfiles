@@ -31,8 +31,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 alias gradle="$HOME/Developer/gradle-9.3.1/bin/gradle"
 
 # graalvm
-export GRAALVM_HOME="$HOME/Developer/graalvm-jdk-25+37.1/Contents/Home"
-export PATH="$HOME/Developer/graalvm-jdk-25+37.1/Contents/Home/bin:$PATH"
+export GRAALVM_HOME="/opt/homebrew/opt/graalvm/libexec/graalvm.jdk/Contents/Home"
+export JAVA_HOME="$GRAALVM_HOME"
+export PATH="$JAVA_HOME/bin:$PATH"
 
 # zig
 alias zig="$HOME/Developer/zig-aarch64-macos-0.15.2/zig"
