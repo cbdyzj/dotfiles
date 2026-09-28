@@ -16,5 +16,6 @@ alias benv='bun -p "Bun.env[process.argv[1]]" --'
 alias code='open -b com.microsoft.VSCode'
 alias ubuntu="docker run --rm -it public.ecr.aws/docker/library/ubuntu:24.04"
 alias claude='claude --dangerously-skip-permissions'
-alias codex='codex --yolo'
+alias codex='codex --yolo --no-alt-screen'
 alias opencode-ship="opencode run --command ship"
+
